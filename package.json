@@ -11,6 +11,8 @@
     "react-player": "^2.9.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
+    "typeface-archivo-narrow": "^1.1.13",
+    "typeface-merriweather": "^1.1.13",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
