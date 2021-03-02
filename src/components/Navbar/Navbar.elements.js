@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaMagento } from "react-icons/fa";
 
-import { Container } from "../../styles/Global";
 import Theme from "./../../styles/Theme";
 import { setTransition } from "../../styles/Setters";
+import Container from "./../globals/Container";
 
 const NAV_HEIGHT = "5rem";
 
