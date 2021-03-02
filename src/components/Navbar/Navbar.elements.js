@@ -54,6 +54,7 @@ export const NavMenu = styled.ul`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
   position: absolute;
   top: ${NAV_HEIGHT};
   left: ${({ visible }) => (visible ? 0 : "-100%")};
@@ -61,6 +62,7 @@ export const NavMenu = styled.ul`
   background: ${Theme.color.mainBlack};
 
   @media screen and (min-width: 960px) {
+    height: auto;
     position: static;
     justify-content: flex-end;
     flex-direction: row;
