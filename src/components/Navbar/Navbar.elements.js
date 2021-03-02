@@ -6,24 +6,23 @@ import { Container } from "../../styles/Global";
 import Theme from "./../../styles/Theme";
 import { setTransition } from "../../styles/Setters";
 
+const NAV_HEIGHT = "5rem";
+
 export const Nav = styled.nav`
-  background: #101522;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
+  background: ${Theme.color.mainBlack};
+  height: ${NAV_HEIGHT};
+  width: 100%;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
 `;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
-
-  /* ${Container}// not yet sure why this is needed */
+  align-items: center;
+  height: 100%;
 `;
 
 export const NavLogo = styled(Link)`
@@ -41,11 +40,8 @@ export const NavIcon = styled(FaMagento)`
 `;
 
 export const MobileIcon = styled.div`
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 50%);
+  display: flex;
+  justify-content: center;
   font-size: 1.8rem;
   cursor: pointer;
 
@@ -58,15 +54,16 @@ export const NavMenu = styled.ul`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 90vh;
   position: absolute;
+  top: ${NAV_HEIGHT};
   left: ${({ visible }) => (visible ? 0 : "-100%")};
-  opacity: 1;
   ${setTransition()};
-  background: dodgerblue;
+  background: ${Theme.color.mainBlack};
 
   @media screen and (min-width: 960px) {
-    display: flex;
+    position: static;
+    justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
     list-style: none;
     text-align: center;
@@ -74,37 +71,38 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
-  border-bottom: 2px solid transparent;
-  &:hover {
-    border-bottom: 2px solid #4b59f7;
-  }
+  width: 100%;
+  text-decoration: none;
 
-  @media screen and (max-width: 960px) {
-    width: 100%;
+  @media screen and (min-width: 960px) {
+    width: auto;
+    height: ${NAV_HEIGHT};
+    ${setTransition()};
+    border-bottom: 2px solid transparent;
+
     &:hover {
-      border: none;
+      border-bottom: 2px solid ${Theme.color.secondary};
     }
   }
 `;
 
 export const NavLink = styled(Link)`
-  color: ${Theme.color.mainWhite};
-  display: flex;
-  align-items: center;
+  color: ${Theme.color.mainGrey};
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+  ${setTransition()};
 
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
+  &:hover {
+    color: ${Theme.color.mainWhite};
+  }
 
-    &:hover {
-      color: #4b59f7;
-      ${setTransition()};
-    }
+  @media screen and (min-width: 960px) {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    height: 100%;
   }
 `;
