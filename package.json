@@ -10,6 +10,7 @@
     "react-dom": "^17.0.1",
     "react-juicer-feed": "^0.0.2-alpha-4",
     "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
     "typeface-archivo-narrow": "^1.1.13",
