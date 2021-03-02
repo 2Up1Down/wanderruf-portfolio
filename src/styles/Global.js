@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: ${Theme.color.mainBlack};
+  /* margin: 0; */
 }
 
 p, a, li, span, small {
@@ -57,9 +58,4 @@ export const Container = styled.div`
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 3rem;
-
-  @media screen and (max-width: 991px) {
-    padding: 0 2rem;
-  }
 `;
