@@ -8,13 +8,16 @@ import {
   NavbarContainer,
   NavIcon,
   NavLogo,
+  NavMenu,
+  NavItem,
+  NavLink,
   MobileIcon,
 } from "./Navbar.elements";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const [visibleNav, setVisibleNav] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => setVisibleNav(!visibleNav);
 
   return (
     <>
@@ -26,8 +29,25 @@ const Navbar = () => {
               WANDERRUF
             </NavLogo>
             <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+              {visibleNav ? <FaTimes /> : <FaBars />}
             </MobileIcon>
+            <NavMenu onClick={handleClick} visible={visibleNav}>
+              <NavItem>
+                <NavLink to="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/">Services</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/">Portfolio</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/">Contact</NavLink>
+              </NavItem>
+            </NavMenu>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
