@@ -1,15 +1,15 @@
 import React from "react";
-import { Nav, NavbarContainer } from "./Navbar.elements";
+import { Nav, NavbarContainer, NavIcon, NavLogo } from "./Navbar.elements";
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          {/* <NavLogo to="/">
+          <NavLogo to="/">
             <NavIcon />
             WANDERRUF
-          </NavLogo> */}
+          </NavLogo>
         </NavbarContainer>
       </Nav>
     </>
