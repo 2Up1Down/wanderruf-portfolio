@@ -50,19 +50,16 @@ a:hover {
 }
 `;
 
+export default GlobalStyle;
+
 export const Container = styled.div`
   z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 3rem;
 
   @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 2rem;
   }
 `;
-
-export default GlobalStyle;
