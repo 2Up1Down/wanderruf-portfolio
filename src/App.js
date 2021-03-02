@@ -1,13 +1,16 @@
-import logo from "./images/logo.svg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Home from "./pages/home";
 import GlobalStyle from "./styles/Global";
+import { Navbar } from "./components";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <GlobalStyle />
+
       <Home />
-    </div>
+    </Router>
   );
 }
 
