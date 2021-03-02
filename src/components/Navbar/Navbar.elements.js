@@ -22,7 +22,7 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   height: 80px;
 
-  /* ${Container} */ // not yet sure why this is needed
+  /* ${Container}// not yet sure why this is needed */
 `;
 
 export const NavLogo = styled(Link)`
@@ -37,4 +37,18 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
+`;
+
+export const MobileIcon = styled.div`
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 50%);
+  font-size: 1.8rem;
+  cursor: pointer;
+
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
 `;
