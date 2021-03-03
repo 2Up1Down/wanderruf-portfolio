@@ -1,3 +1,5 @@
+import { css } from "styled-components";
+
 export const setBorder = ({
   width = "2px",
   style = "solid",
@@ -13,3 +15,20 @@ export const setTransition = ({
 } = {}) => {
   return `transition: ${property} ${time} ${timing}`;
 };
+
+const sizes = {
+  xs: "320px",
+  sm: "576px",
+  md: "768px",
+  lg: "992px",
+  xl: "1200px",
+};
+
+export const media = Object.keys(sizes).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (min-width: ${sizes[label]}) {
+      ${css(...args)}
+    }
+  `;
+  return acc;
+}, {});
