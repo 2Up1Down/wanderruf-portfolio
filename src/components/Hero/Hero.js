@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
-import DroneShot from "../media/DroneShot.mp4";
-import Theme from "./../styles/Theme";
+import DroneShot from "../../media/DroneShot.mp4";
+import Theme from "../../styles/Theme";
 
 // Codepen example: https://codepen.io/remersonc/pen/JXyvbZ
 const HeroWrapper = styled.section`
@@ -22,6 +22,7 @@ const HeroInfo = styled.div`
   color: ${Theme.color.mainWhite};
   h1 {
     font-size: 1.777rem;
+    /* font-style */
   }
   h2 {
     font-size: 4.209rem;
