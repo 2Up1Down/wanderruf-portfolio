@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaMagento } from "react-icons/fa";
 
 import Theme from "./../../styles/Theme";
-import { setTransition } from "../../styles/Setters";
+import { setTransition, media } from "../../styles/Setters";
 import Container from "./../globals/Container";
 
 const NAV_HEIGHT = "5rem";
@@ -45,9 +45,9 @@ export const MobileIcon = styled.div`
   font-size: 1.8rem;
   cursor: pointer;
 
-  @media screen and (min-width: 960px) {
-    display: none;
-  }
+  ${media.md`
+    display: none;  
+  `}
 `;
 
 export const NavMenu = styled.ul`
@@ -61,7 +61,7 @@ export const NavMenu = styled.ul`
   ${setTransition()};
   background: ${Theme.color.mainBlack};
 
-  @media screen and (min-width: 960px) {
+  ${media.md`
     height: auto;
     position: static;
     justify-content: flex-end;
@@ -69,14 +69,14 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-  }
+  `}
 `;
 
 export const NavItem = styled.li`
   width: 100%;
   text-decoration: none;
 
-  @media screen and (min-width: 960px) {
+  ${media.md`
     width: auto;
     height: ${NAV_HEIGHT};
     ${setTransition()};
@@ -85,7 +85,7 @@ export const NavItem = styled.li`
     &:hover {
       border-bottom: 2px solid ${Theme.color.secondary};
     }
-  }
+  `}
 `;
 
 export const NavLink = styled(Link)`
@@ -101,12 +101,12 @@ export const NavLink = styled(Link)`
     color: ${Theme.color.mainWhite};
   }
 
-  @media screen and (min-width: 960px) {
+  ${media.md`
     display: flex;
     align-items: center;
     padding: 0.5rem 1.25rem;
     height: 100%;
-  }
+  `}
 `;
 
 export const NavItemBtn = styled.li`
