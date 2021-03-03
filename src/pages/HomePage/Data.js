@@ -1,5 +1,3 @@
-import { FaSmile } from "react-icons/fa";
-
 export const HomeObjOne = {
   colorBg: "black",
   imgStart: false,

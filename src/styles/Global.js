@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import "typeface-archivo-narrow";
 import "typeface-merriweather";
 import Theme from "./Theme";
