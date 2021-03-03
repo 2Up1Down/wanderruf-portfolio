@@ -108,3 +108,9 @@ export const NavLink = styled(Link)`
     height: 100%;
   }
 `;
+
+export const NavItemBtn = styled.li`
+  padding: 0rem 1rem;
+`;
+
+export const NavBtnLink = styled(Link)``;
