@@ -110,7 +110,7 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavItemBtn = styled.li`
-  padding: 0rem 1rem;
+  padding-left: 1rem;
 `;
 
 export const NavBtnLink = styled(Link)``;
