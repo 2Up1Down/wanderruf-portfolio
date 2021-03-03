@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 import Theme from "../../styles/Theme";
-import { setBorder, setTransition } from "../../styles/Setters";
+import { setTransition } from "../../styles/Setters";
+import { media } from "./../../styles/Setters";
 
 const btnSize = {
   small: "0.25rem 1.0rem",
@@ -48,9 +49,9 @@ const Button = styled.button`
     background: ${Theme.color.primary_light};
   }
 
-  @media screen and (min-width: 960px) {
+  ${media.md`
     width: auto;
-  }
+  `}
 `;
 
 export default Button;
