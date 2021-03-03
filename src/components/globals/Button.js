@@ -19,7 +19,6 @@ const Button = styled.button`
   border-radius: 4px;
   white-space: nowrap;
   text-transform: capitalize;
-  margin: 1rem 0;
   cursor: pointer;
   outline: none;
   border: none;

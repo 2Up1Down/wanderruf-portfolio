@@ -20,7 +20,7 @@ body {
   /* margin: 0; */
 }
 
-p, a, li, span, small {
+p, a, li, span, small, button {
   font-family: 'Archivo Narrow', sans-serif;
 }
 
