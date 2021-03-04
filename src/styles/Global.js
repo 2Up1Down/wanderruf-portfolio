@@ -27,7 +27,7 @@ body {
   /* margin: 0; */
 }
 
-p, a, li, span, small, button {
+p, a, li, span, small, button, input, textarea {
   font-family: ${Fonts.main};
 
 }

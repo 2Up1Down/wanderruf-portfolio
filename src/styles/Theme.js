@@ -32,9 +32,8 @@ const Theme = {
     darkest: "box-shadow: 0px 0px 15px 0px rgba(46,46,46,1);",
   },
 
-  border: {
-    radius: "0.25rem",
-  },
+  radius: "0.25rem",
+  spacing: "0.1rem",
 
   sizes: {
     maxWidth: "1170px",
