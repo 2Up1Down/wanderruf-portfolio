@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import "typeface-archivo-narrow";
-import "typeface-merriweather";
+
+// TODO: Seems like typeface is deprecated, use fontsource later https://github.com/fontsource/fontsource
+import "typeface-dancing-script";
+import "typeface-raleway";
 import Theme from "./Theme";
 
 const GlobalStyle = createGlobalStyle`
@@ -13,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 html {font-size: 100%;} /*16px*/
 
 body {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: ${Theme.color.mainBlack};
@@ -21,13 +23,14 @@ body {
 }
 
 p, a, li, span, small, button {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* values from https://type-scale.com/ */
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Dancing Script', serif;
   font-weight: 700;
   line-height: 1.3;
 }
