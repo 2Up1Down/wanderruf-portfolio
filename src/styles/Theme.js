@@ -31,6 +31,19 @@ const Theme = {
     dark: "box-shadow: 0px 0px 15px 0px rgba(120,120,120,1);",
     darkest: "box-shadow: 0px 0px 15px 0px rgba(46,46,46,1);",
   },
+
+  border: {
+    radius: "0.25rem",
+  },
+
+  sizes: {
+    maxWidth: "1170px",
+    xs: "320px",
+    sm: "576px",
+    md: "768px",
+    lg: "992px",
+    xl: "1200px",
+  },
 };
 
 export default Theme;

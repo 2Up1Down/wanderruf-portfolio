@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import Theme from "./Theme";
 
 export const setBorder = ({
   width = "2px",
@@ -16,17 +17,9 @@ export const setTransition = ({
   return `transition: ${property} ${time} ${timing}`;
 };
 
-const sizes = {
-  xs: "320px",
-  sm: "576px",
-  md: "768px",
-  lg: "992px",
-  xl: "1200px",
-};
-
-export const media = Object.keys(sizes).reduce((acc, label) => {
+export const media = Object.keys(Theme.sizes).reduce((acc, label) => {
   acc[label] = (...args) => css`
-    @media (min-width: ${sizes[label]}) {
+    @media (min-width: ${Theme.sizes[label]}) {
       ${css(...args)}
     }
   `;
