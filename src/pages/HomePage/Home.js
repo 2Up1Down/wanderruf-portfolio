@@ -2,7 +2,7 @@ import React from "react";
 import JuicerFeed from "react-juicer-feed";
 
 import Hero from "../../components/Hero/Hero";
-import Player from "../../components/temp/Player";
+// import Player from "../../components/temp/Player";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import { HomeObjOne } from "./Data";
 
@@ -12,7 +12,6 @@ const Home = () => {
       <Hero />
       <InfoSection {...HomeObjOne} />
       <InfoSection />
-      {/* <Player /> */}
       <JuicerFeed feedId="wanderruf" />
     </>
   );
