@@ -14,8 +14,10 @@ import {
   NavItemBtn,
   NavBtnLink,
   NavLink,
+  NavSocialWrapper,
   MobileIcon,
 } from "./Navbar.elements";
+import { SocialLinks } from "./../";
 
 const Navbar = () => {
   const [visibleNav, setVisibleNav] = useState(false);
@@ -36,9 +38,6 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} visible={visibleNav}>
               <NavItem>
-                <NavLink to="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink to="/#about">About</NavLink>
               </NavItem>
               <NavItem>
@@ -52,6 +51,11 @@ const Navbar = () => {
                   <Button primary>Contact</Button>
                 </NavBtnLink>
               </NavItemBtn>
+              {visibleNav && (
+                <NavSocialWrapper>
+                  <SocialLinks />
+                </NavSocialWrapper>
+              )}
             </NavMenu>
           </NavbarContainer>
         </Nav>

@@ -105,7 +105,7 @@ export const NavLink = styled(Link)`
   ${media.md`
     display: flex;
     align-items: center;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1rem;
     height: 100%;
   `}
 `;
@@ -123,3 +123,7 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavBtnLink = styled(Link)``;
+
+export const NavSocialWrapper = styled.div`
+  margin-top: 6rem;
+`;
