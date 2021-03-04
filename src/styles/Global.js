@@ -5,6 +5,11 @@ import "typeface-dancing-script";
 import "typeface-raleway";
 import Theme from "./Theme";
 
+export const Fonts = {
+  main: "'Raleway', sans-serif",
+  handwriting: "'Dancing Script', serif",
+};
+
 const GlobalStyle = createGlobalStyle`
 * {
   margin:0;
@@ -15,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 html {font-size: 100%;} /*16px*/
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: ${Fonts.main};
   font-weight: 400;
   line-height: 1.5;
   color: ${Theme.color.mainBlack};
@@ -23,14 +28,14 @@ body {
 }
 
 p, a, li, span, small, button {
-  font-family: 'Raleway', sans-serif;
+  font-family: ${Fonts.main};
+
 }
 
 /* values from https://type-scale.com/ */
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  /* font-family: 'Merriweather', serif; */
-  font-family: 'Dancing Script', serif;
+  font-family: ${Fonts.handwriting};
   font-weight: 700;
   line-height: 1.3;
 }
