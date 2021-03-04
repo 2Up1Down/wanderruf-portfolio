@@ -14,7 +14,9 @@ const Form = ({ action = "#", method = "POST" }) => {
         <FormInput name="name" placeholder="Name" type="text" />
         <FormInput name="email" placeholder="Email" type="email" />
         <FormTextarea name="message" placeholder="Message" rows="5" />
-        <Button type="submit">Submit here</Button>
+        <Button type="submit" big>
+          Submit here
+        </Button>
       </FormGroup>
     </FormWrapper>
   );
