@@ -15,6 +15,12 @@ const GlobalStyle = createGlobalStyle`
   margin:0;
   padding:0;
   box-sizing: border-box;
+  // remove tap highlight https://stackoverflow.com/questions/61308314/is-there-a-way-to-remove-the-blue-highlight-for-a-checkbox
+  -webkit-tap-highlight-color: transparent
+}
+
+::selection {
+  background: ${Theme.color.secondary};
 }
 
 html {font-size: 100%;} /*16px*/
@@ -57,6 +63,7 @@ h5 {font-size: 1.333rem;}
 a:hover {
   text-decoration: none;
 }
+
 `;
 
 export default GlobalStyle;
