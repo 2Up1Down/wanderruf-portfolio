@@ -113,10 +113,12 @@ export const NavLink = styled(Link)`
 export const NavItemBtn = styled.li`
   width: 60%;
   margin-top: 2rem;
+
   ${media.md`
   width: auto;
     padding-left: 1rem;
     margin: 0;
+    margin-bottom: 2px;
   `}
 `;
 
