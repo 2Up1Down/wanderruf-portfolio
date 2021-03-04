@@ -11,7 +11,6 @@ const Home = () => {
     <>
       <Hero />
       <InfoSection {...HomeObjOne} />
-      <InfoSection />
       <JuicerFeed feedId="wanderruf" />
     </>
   );
