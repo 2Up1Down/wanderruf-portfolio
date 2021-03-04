@@ -26,8 +26,6 @@ const InfoSection = ({
   start,
   subtitle,
 }) => {
-  console.log(headline);
-
   return (
     <>
       <InfoSec colorBg={colorBg}>
