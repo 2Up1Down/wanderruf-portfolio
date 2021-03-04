@@ -53,6 +53,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -73,7 +74,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  width: 100%;
+  width: 60%;
   text-decoration: none;
 
   ${media.md`
@@ -110,7 +111,13 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavItemBtn = styled.li`
-  padding-left: 1rem;
+  width: 60%;
+  margin-top: 2rem;
+  ${media.md`
+  width: auto;
+    padding-left: 1rem;
+    margin: 0;
+  `}
 `;
 
 export const NavBtnLink = styled(Link)``;
