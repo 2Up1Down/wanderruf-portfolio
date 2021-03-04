@@ -39,7 +39,9 @@ const InfoSection = ({
                 {subtitle && <Subtitle>{subtitle}</Subtitle>}
                 <Description>{description}</Description>
                 <Link to="/contact">
-                  <Button big>{buttonLabel}</Button>
+                  <Button big lg>
+                    {buttonLabel}
+                  </Button>
                 </Link>
               </TextWrapper>
             </InfoColumn>
