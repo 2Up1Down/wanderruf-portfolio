@@ -1,22 +1,46 @@
 import React from "react";
 
 import {
-  FooterContainer,
-  FooterSubHeading,
-  FooterSubscription,
-  FooterSubText,
+  FooterWrapper,
+  FooterContact,
+  FooterContactInformation,
+  ContactLink,
+  FooterCopyright,
+  FooterItems,
+  FooterSocial,
+  FooterTitle,
 } from "./Footer.elements";
+import Container from "./../globals/Container";
+import { SocialLinks } from "../";
+
+const today = new Date();
 
 const Footer = () => {
   return (
-    <FooterContainer>
-      <FooterSubscription>
-        <FooterSubHeading>
-          Join our exclusive membership to receiv the latest news and trens
-        </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time.</FooterSubText>
-      </FooterSubscription>
-    </FooterContainer>
+    <FooterWrapper>
+      <Container>
+        <FooterContactInformation>
+          <FooterContact>
+            <FooterTitle>Contact</FooterTitle>
+            <FooterItems>
+              <ContactLink href="mailto:wendelin.steiner@gmail.com">
+                wendelin.steiner@gmail.com
+              </ContactLink>
+            </FooterItems>
+          </FooterContact>
+          <FooterSocial>
+            <FooterTitle>Social Media</FooterTitle>
+            <FooterItems>
+              <SocialLinks />
+            </FooterItems>
+          </FooterSocial>
+        </FooterContactInformation>
+
+        <FooterCopyright>
+          wanderruf &copy; {today.getFullYear()}
+        </FooterCopyright>
+      </Container>
+    </FooterWrapper>
   );
 };
 
