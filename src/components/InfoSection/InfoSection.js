@@ -14,6 +14,7 @@ import {
 } from "./InfoSection.elements";
 import Container from "./../globals/Container";
 import Button from "./../globals/Button";
+import { Underline } from "./../globals/Underline";
 
 const InfoSection = ({
   alt,
@@ -34,6 +35,7 @@ const InfoSection = ({
             <InfoColumn>
               <TextWrapper>
                 <Heading>{headline}</Heading>
+                <Underline />
                 {subtitle && <Subtitle>{subtitle}</Subtitle>}
                 <Description>{description}</Description>
                 <Link to="/contact">
@@ -42,8 +44,8 @@ const InfoSection = ({
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
-              <ImgWrapper start={start}>
-                <Img src={img} alt={alt} />
+              <ImgWrapper>
+                <Img src={img} alt={alt} imgStart={imgStart} />
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>

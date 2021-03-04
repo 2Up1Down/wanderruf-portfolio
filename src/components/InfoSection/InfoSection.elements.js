@@ -21,68 +21,51 @@ export const InfoRow = styled.div`
 
   ${media.md`
     flex-direction: row;
+    flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
     justify-content: space-between;
+    gap: 2rem;
+  `}
+  ${media.lg`
+    gap: 4rem;
   `}
 `;
 
 export const InfoColumn = styled.div`
-  /* margin-bottom: 2rem; */
-  /* max-width: 100%; */
-  /* flex-basis: 100%; */
-
-  align-self: ${({ center }) => (center ? "center" : "normal")};
-
   ${media.md`
-  flex: 1;
-    /* margin-bottom: 15px;
-    padding: 0 15px;
-    flex-basis: 50%;
-    max-width: 50%; */
+    flex: 1;
   `}
 `;
 
 export const TextWrapper = styled.div`
   text-align: left;
-
-  ${media.md`
-  /* max-width: 540px;
-padding-top: 0;
-padding-bottom: 60px; */
-`}
 `;
 
 export const Description = styled.div`
   white-space: pre-line;
-  /* color: ${Theme.color.mainWhite};
-font-size: 1.2rem;
-line-height: 1rem;
-letter-spacing: 1.4px;
-margin-bottom: 1rem; */
+  margin-bottom: 2.5rem;
 `;
 
 export const Heading = styled.h2`
   margin-top: 0rem;
-  /* color: ${Theme.color.grey_2}; */
+  margin-bottom: 0.75rem;
 `;
 
-export const Subtitle = styled.h3`
-  /* max-width: 440px;
-  margin-bottom: 2rem;
-  color: ${Theme.color.mainWhite}; */
-`;
+export const Subtitle = styled.h3``;
 
 export const ImgWrapper = styled.div`
-  /* max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")}; */
 `;
 
 export const Img = styled.img`
+  margin: 0 auto;
   padding-right: 0;
   border: 0;
   max-width: 100%;
   object-fit: contain;
-  /* vertical-align: middle; */
-  /* display: inline-block; */
-  /* max-height: 500px; */
+
+  ${media.md`
+    margin: 0;
+    ${({ imgStart }) =>
+      imgStart ? "margin-right: auto" : "margin-left: auto"};
+`}
 `;
