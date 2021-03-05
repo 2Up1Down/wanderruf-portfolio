@@ -7,3 +7,8 @@ export const Underline = styled.div`
   margin-bottom: 2rem;
   background: ${Theme.color.secondary};
 `;
+
+export const UnderlineSmall = styled(Underline)`
+  width: 4rem;
+  height: 0.15rem;
+`;

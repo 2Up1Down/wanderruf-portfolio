@@ -12,6 +12,7 @@ import {
 } from "./Footer.elements";
 import Container from "./../globals/Container";
 import { SocialLinks } from "../";
+import { UnderlineSmall } from "../globals/Underline";
 
 const today = new Date();
 
@@ -22,6 +23,7 @@ const Footer = () => {
         <FooterContactInformation>
           <FooterContact>
             <FooterTitle>Contact</FooterTitle>
+            <UnderlineSmall />
             <FooterItems>
               <ContactLink href="mailto:wendelin.steiner@gmail.com">
                 wendelin.steiner@gmail.com
@@ -30,6 +32,7 @@ const Footer = () => {
           </FooterContact>
           <FooterSocial>
             <FooterTitle>Social Media</FooterTitle>
+            <UnderlineSmall />
             <FooterItems>
               <SocialLinks />
             </FooterItems>

@@ -36,6 +36,7 @@ const baseContactStyles = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   ${media.md`
     justify-content: flex-start;
@@ -62,6 +63,7 @@ export const ContactLink = styled.a`
 
 export const FooterTitle = styled.h3`
   margin-top: 0;
+  margin-bottom: 0.75rem;
 `;
 
 export const FooterItems = styled.div`
