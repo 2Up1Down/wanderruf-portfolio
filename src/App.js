@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import GlobalStyle from "./styles/Global";
 import { Footer, Navbar } from "./components";
-import Home from "./pages/HomePage/Home";
-import Contact from "./pages/ContactPage/Contact";
+import { Home, Contact } from "./pages";
 
 function App() {
   return (
