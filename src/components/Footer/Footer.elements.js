@@ -61,7 +61,7 @@ export const ContactLink = styled.a`
   }
 `;
 
-export const FooterTitle = styled.h3`
+export const FooterTitle = styled.h4`
   margin-top: 0;
   margin-bottom: 0.75rem;
 `;
