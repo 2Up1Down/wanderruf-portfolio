@@ -22,8 +22,10 @@ const Button = styled.button`
   text-transform: capitalize;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   width: 100%;
+  background: ${Theme.color.primary};
+  color: ${Theme.color.mainWhite};
 
   // Idea from https://stackoverflow.com/questions/49181959/react-styled-components-3-button-sizes
   // Example here https://codesandbox.io/s/735ppo790x
@@ -37,12 +39,6 @@ const Button = styled.button`
     if (props.lg) return fontSize.lg;
     return fontSize.md;
   }};
-  background: ${(props) => {
-    if (props.primary) return Theme.color.primary;
-    if (props.secondary) return Theme.color.secondary;
-    return Theme.color.primary;
-  }};
-  color: ${Theme.color.mainWhite};
 
   &:hover {
     ${setTransition()};
