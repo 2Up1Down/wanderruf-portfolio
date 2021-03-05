@@ -7,3 +7,4 @@ export { default as SocialLinks } from "./SocialLinks/SocialLinks";
 export { default as Portfolio } from "./Portfolio/Portfolio";
 export { default as Services } from "./Services/Services";
 export { default as Contact } from "./Contact/Contact";
+export { default as CuratorFeed } from "./External/CuratorFeed";

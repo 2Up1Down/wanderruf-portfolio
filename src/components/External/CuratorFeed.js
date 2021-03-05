@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { CuratorWrapper } from "./Curator.elements";
+import { CuratorWrapper } from "./CuratorFeed.elements";
 
-const Curator = () => {
+const CuratorFeed = () => {
   return (
     <CuratorWrapper>
       <div id="curator-feed-default-feed-layout">
@@ -13,4 +13,4 @@ const Curator = () => {
   );
 };
 
-export default Curator;
+export default CuratorFeed;
