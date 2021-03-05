@@ -51,11 +51,9 @@ const Navbar = () => {
                   <Button primary>Contact</Button>
                 </NavBtnLink>
               </NavItemBtn>
-              {visibleNav && (
-                <NavSocialWrapper>
-                  <SocialLinks />
-                </NavSocialWrapper>
-              )}
+              <NavSocialWrapper>
+                <SocialLinks />
+              </NavSocialWrapper>
             </NavMenu>
           </NavbarContainer>
         </Nav>

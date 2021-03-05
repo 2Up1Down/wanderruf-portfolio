@@ -126,4 +126,8 @@ export const NavBtnLink = styled(Link)``;
 
 export const NavSocialWrapper = styled.div`
   margin-top: 6rem;
+
+  ${media.md`
+    display: none;
+  `};
 `;
