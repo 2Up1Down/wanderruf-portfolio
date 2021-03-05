@@ -29,7 +29,8 @@ body {
   font-family: ${Fonts.main};
   font-weight: 400;
   line-height: 1.5;
-  color: ${Theme.color.mainBlack};
+  color: ${Theme.color.mainWhite};
+  background: ${Theme.color.mainBlack}
   /* margin: 0; */
 }
 
