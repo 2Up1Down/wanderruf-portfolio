@@ -1,8 +1,8 @@
 import React from "react";
 // import Hero from "./../../components";
-import { Form } from "./../../components";
+import { Form } from "../../components";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <>
       hello from contact
@@ -13,4 +13,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;
