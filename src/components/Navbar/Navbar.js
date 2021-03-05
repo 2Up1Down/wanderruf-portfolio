@@ -7,6 +7,7 @@ import Button from "./../globals/Button";
 import {
   Nav,
   NavbarContainer,
+  NavButton,
   NavIcon,
   NavLogo,
   NavMenu,
@@ -48,7 +49,7 @@ const Navbar = () => {
               </NavItem>
               <NavItemBtn>
                 <NavBtnLink to="/contact">
-                  <Button primary>Contact</Button>
+                  <NavButton>Contact</NavButton>
                 </NavBtnLink>
               </NavItemBtn>
               <NavSocialWrapper>

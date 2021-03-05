@@ -5,6 +5,7 @@ import { FaMagento } from "react-icons/fa";
 import Theme from "./../../styles/Theme";
 import { setTransition, media } from "../../styles/Setters";
 import Container from "./../globals/Container";
+import Button from "./../globals/Button";
 
 const NAV_HEIGHT = "5rem";
 
@@ -118,7 +119,7 @@ export const NavItemBtn = styled.li`
   width: auto;
     padding-left: 1rem;
     margin: 0;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   `}
 `;
 
@@ -129,5 +130,13 @@ export const NavSocialWrapper = styled.div`
 
   ${media.md`
     display: none;
+  `};
+`;
+
+export const NavButton = styled(Button)`
+  padding: 0.75rem 2.5rem;
+
+  ${media.md`
+    padding: 0.5rem 1.5rem;
   `};
 `;
