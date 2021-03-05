@@ -1,14 +1,18 @@
 import React from "react";
-import Container from "../../components/globals/Container";
+import Container from "../globals/Container";
 
-import { Form } from "./../../components";
-import { ContactWrapper } from "./Contact.elements";
+import { Form } from "..";
+import { ContactWrapper, FormWrapper } from "./Contact.elements";
+import { Heading } from "./../globals/Heading";
 
 const Contact = () => {
   return (
     <ContactWrapper>
       <Container>
-        <Form action="https://formspree.io/f/xjvpzqzz" method="POST"></Form>
+        <Heading title="Get in Touch" position="center" color="white" />
+        <FormWrapper>
+          <Form action="https://formspree.io/f/xjvpzqzz" method="POST"></Form>
+        </FormWrapper>
       </Container>
     </ContactWrapper>
   );
