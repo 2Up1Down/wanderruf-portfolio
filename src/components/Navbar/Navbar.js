@@ -3,18 +3,17 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 import Theme from "../../styles/Theme";
-import Button from "./../globals/Button";
 import {
   Nav,
   NavbarContainer,
   NavButton,
+  NavHashLink,
   NavIcon,
   NavLogo,
   NavMenu,
   NavItem,
   NavItemBtn,
   NavBtnLink,
-  NavLink,
   NavSocialWrapper,
   MobileIcon,
 } from "./Navbar.elements";
@@ -39,13 +38,19 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} visible={visibleNav}>
               <NavItem>
-                <NavLink to="/#about">About</NavLink>
+                <NavHashLink to="/#about" smooth>
+                  About
+                </NavHashLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/#services">Services</NavLink>
+                <NavHashLink to="/#services" smooth>
+                  Services
+                </NavHashLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/#portfolio">Portfolio</NavLink>
+                <NavHashLink to="/#portfolio" smooth>
+                  Portfolio
+                </NavHashLink>
               </NavItem>
               <NavItemBtn>
                 <NavBtnLink to="/contact">

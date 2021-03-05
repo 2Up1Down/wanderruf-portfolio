@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { FaMagento } from "react-icons/fa";
 
 import Theme from "./../../styles/Theme";
@@ -91,6 +92,27 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(Link)`
+  color: ${Theme.color.mainGrey};
+  text-decoration: none;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+  ${setTransition()};
+
+  &:hover {
+    color: ${Theme.color.mainWhite};
+  }
+
+  ${media.md`
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  `}
+`;
+
+export const NavHashLink = styled(HashLink)`
   color: ${Theme.color.mainGrey};
   text-decoration: none;
   text-align: center;
