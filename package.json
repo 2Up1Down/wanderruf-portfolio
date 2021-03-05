@@ -12,6 +12,7 @@
     "react-juicer-feed": "^0.0.2-alpha-4",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
     "typeface-dancing-script": "^1.1.13",
