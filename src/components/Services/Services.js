@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <ServicesWrapper id="services">
       <Container>
-        <Heading title="Services" />
+        <Heading title="Services" position="center" color="white" />
         <ServicesContainer>
           <ServiceContainer>Service 1</ServiceContainer>
         </ServicesContainer>
