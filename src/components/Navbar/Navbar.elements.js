@@ -63,6 +63,7 @@ export const NavMenu = styled.ul`
   left: ${({ visible }) => (visible ? 0 : "-100%")};
   ${setTransition()};
   background: ${Theme.color.mainBlack};
+  list-style: none;
 
   ${media.md`
     height: auto;
@@ -70,7 +71,7 @@ export const NavMenu = styled.ul`
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    list-style: none;
+    
     text-align: center;
   `}
 `;
@@ -138,7 +139,7 @@ export const NavItemBtn = styled.li`
   margin-top: 2rem;
 
   ${media.md`
-  width: auto;
+    width: auto;
     padding-left: 1rem;
     margin: 0;
     margin-bottom: 3px;
