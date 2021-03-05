@@ -17,6 +17,7 @@ import Button from "./../globals/Button";
 import { Underline } from "./../globals/Underline";
 
 const InfoSection = ({
+  id,
   alt,
   buttonLabel,
   colorBg,
@@ -29,7 +30,7 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoSec colorBg={colorBg}>
+      <InfoSec colorBg={colorBg} id={id}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
