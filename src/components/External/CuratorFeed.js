@@ -7,16 +7,16 @@ const CuratorFeed = () => {
 
   // const data = {};
 
-  useEffect(async () => {
+  useEffect(() => {
     document.title = `You clicked ${count} times on the button`;
   });
 
   return (
     <CuratorWrapper>
       <div id="curator-feed-default-feed-layout">
-        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">
+        {/* <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">
           Powered by Curator.io
-        </a>
+        </a> */}
         <h2>{count}</h2>
         <Button onClick={() => setCount(count + 1)}>Click me</Button>
       </div>
