@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-import Theme from "./../../styles/Theme";
+import Theme from "../../styles/Theme";
 
-export const PortfolioWrapper = styled.section`
+export const SocialMediaWrapper = styled.section`
   background: ${Theme.color.mainBlack};
 `;
 
-export const PortfolioFeed = styled.div``;
+export const SocialMediaFeed = styled.div``;
 
 export const HeadingWrapper = styled.div`
   display: flex;

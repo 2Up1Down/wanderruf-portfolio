@@ -48,8 +48,8 @@ const Navbar = () => {
                 </NavHashLink>
               </NavItem>
               <NavItem>
-                <NavHashLink to="/#portfolio" smooth>
-                  Portfolio
+                <NavHashLink to="/#socialmedia" smooth>
+                  Social Media
                 </NavHashLink>
               </NavItem>
               <NavItemBtn>
