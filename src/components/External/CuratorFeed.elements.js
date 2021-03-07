@@ -5,4 +5,6 @@ export const CuratorWrapper = styled.section`
   background: ${Theme.color.mainBlack};
 `;
 
-export const CuratorFeed = styled.div``;
+export const CuratorFeedLayout = styled.div``;
+
+export const CuratorLink = styled.a``;
