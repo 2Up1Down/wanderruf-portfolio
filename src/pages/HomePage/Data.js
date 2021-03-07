@@ -18,3 +18,9 @@ export const HomeObjOne = {
   img: require("../../images/profile.jpeg").default,
   alt: "Image of website owner",
 };
+
+export const SocialMediaData = {
+  headline: "Social Media",
+  description:
+    "Find below my lastest activities. Follow me for more pictures and videos.",
+};

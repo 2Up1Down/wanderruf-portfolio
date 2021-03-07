@@ -3,7 +3,7 @@ import React from "react";
 import { Hero, SocialMedia } from "../../components";
 // import Player from "../../components/temp/Player";
 import InfoSection from "../../components/InfoSection/InfoSection";
-import { HomeObjOne } from "./Data";
+import { HomeObjOne, SocialMediaData } from "./Data";
 import Services from "../../components/Services/Services";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <InfoSection {...HomeObjOne} id="about" />
       <Services />
-      <SocialMedia />
+      <SocialMedia {...SocialMediaData} />
     </>
   );
 };
