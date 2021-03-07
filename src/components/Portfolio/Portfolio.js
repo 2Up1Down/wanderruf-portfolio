@@ -1,5 +1,4 @@
 import React from "react";
-import JuicerFeed from "react-juicer-feed";
 
 import { Heading } from "./../globals/Heading";
 import { PortfolioWrapper, PortfolioFeed } from "./Portfolio.element";
@@ -10,10 +9,7 @@ const Portfolio = () => {
     <PortfolioWrapper id="portfolio">
       <Heading title="Portfolio" position="center" color="white" />
       <PortfolioFeed>
-        Curatorfeed:
         <CuratorFeed />
-        Juicerfeed:
-        <JuicerFeed feedId="wanderruf" />
       </PortfolioFeed>
     </PortfolioWrapper>
   );
