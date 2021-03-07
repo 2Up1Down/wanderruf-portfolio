@@ -2,7 +2,7 @@ import React from "react";
 import { CuratorWrapper, CuratorFeedLayout } from "./CuratorFeed.elements";
 import useCurator from "../../hooks/useCurator";
 
-const CuratorSection = () => {
+const CuratorFeed = () => {
   useCurator();
 
   return (
@@ -21,4 +21,4 @@ const CuratorSection = () => {
   );
 };
 
-export default CuratorSection;
+export default CuratorFeed;
