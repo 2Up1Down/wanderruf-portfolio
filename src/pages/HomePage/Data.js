@@ -21,6 +21,6 @@ export const HomeObjOne = {
 
 export const SocialMediaData = {
   headline: "Social Media",
-  description:
-    "Find below my lastest activities. Follow me for more pictures and videos.",
+  description: `Find below my lastest activities.
+    Follow me for more pictures and videos.`,
 };

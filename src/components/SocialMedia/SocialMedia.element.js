@@ -14,3 +14,13 @@ export const HeadingWrapper = styled.div`
   align-items: center;
   color: ${Theme.color.mainWhite};
 `;
+
+export const SocialMediaDescription = styled.p`
+  text-align: center;
+  white-space: pre-line;
+`;
+
+export const SocialIconWrapper = styled.div`
+  max-width: 10rem;
+  margin: 1.5rem auto;
+`;
