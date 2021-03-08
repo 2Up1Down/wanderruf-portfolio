@@ -11,7 +11,7 @@ const CuratorFeed = () => {
         <a
           href="https://curator.io"
           target="_blank"
-          class="crt-logo crt-tag"
+          className="crt-logo crt-tag"
           rel="noreferrer"
         >
           Powered by Curator.io
