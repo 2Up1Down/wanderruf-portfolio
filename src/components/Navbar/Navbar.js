@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import logo from "../../images/logo-wanderruf.svg";
 
 import Theme from "../../styles/Theme";
 import {
@@ -30,8 +31,7 @@ const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
-              WANDERRUF
+              <NavIcon src={logo} />
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {visibleNav ? <FaTimes /> : <FaBars />}

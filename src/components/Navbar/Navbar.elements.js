@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { FaMagento } from "react-icons/fa";
 
 import Theme from "./../../styles/Theme";
 import { setTransition, media } from "../../styles/Setters";
@@ -37,7 +36,9 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `;
 
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled.img`
+  max-height: 3.5rem;
+  height: 3.5rem;
   margin-right: 0.5rem;
 `;
 
