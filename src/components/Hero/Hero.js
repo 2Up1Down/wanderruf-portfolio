@@ -13,7 +13,8 @@ const Hero = () => {
       </Video>
       <HeroInfo>
         <Title>
-          Nature and Drone Photography <br />
+          Nature and Drone
+          <br /> Photography <br />
           <span>Switzerland </span>
         </Title>
       </HeroInfo>

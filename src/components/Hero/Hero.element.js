@@ -43,19 +43,22 @@ export const Overlay = styled.div`
 
 export const Title = styled.h1`
   font-family: "Raleway", sans-serif;
-  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
   span {
     display: inline-block;
     font-family: "Dancing Script", serif;
-    font-size: 4rem;
     margin-top: 2rem;
+    letter-spacing: 0rem;
+    text-transform: capitalize;
   }
 
   ${media.md`
-    font-size: 4rem;
+    font-size: 3rem;
+  `};
 
-    span {
-      font-size: 5rem;
-    }  
-  `}
+  ${media.lg`
+    font-size: 4rem;
+  `};
 `;
