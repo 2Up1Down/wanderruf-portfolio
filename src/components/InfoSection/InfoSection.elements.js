@@ -23,6 +23,7 @@ export const InfoRow = styled.div`
     flex-direction: row;
     flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
     justify-content: space-between;
+    align-items: flex-start;
     gap: 2rem;
   `}
   ${media.lg`
