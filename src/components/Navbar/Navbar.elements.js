@@ -149,7 +149,7 @@ export const NavItemBtn = styled.li`
 export const NavBtnLink = styled(Link)``;
 
 export const NavSocialWrapper = styled.div`
-  margin-top: 6rem;
+  margin-top: 4rem;
 
   ${media.md`
     display: none;
