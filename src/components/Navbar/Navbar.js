@@ -43,11 +43,6 @@ const Navbar = () => {
                 </NavHashLink>
               </NavItem>
               <NavItem>
-                <NavHashLink to="/#services" smooth>
-                  Services
-                </NavHashLink>
-              </NavItem>
-              <NavItem>
                 <NavHashLink to="/#socialmedia" smooth>
                   Social Media
                 </NavHashLink>
