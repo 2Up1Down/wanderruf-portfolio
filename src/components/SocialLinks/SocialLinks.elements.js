@@ -5,7 +5,7 @@ import { setTransition } from "../../styles/Setters";
 import { media } from "./../../styles/Setters";
 
 export const SocialLinksWrapper = styled.div`
-  width: 10rem;
+  width: 9rem;
 `;
 
 export const SocialList = styled.ul`
