@@ -24,3 +24,8 @@ export const SocialMediaData = {
   description: `Find below my lastest activities.
     Follow me for more pictures and videos.`,
 };
+
+export const MetaData = {
+  title: "WANDERRUF | Nature and Drone Photography in Switzerland",
+  content: `Discover the most beautiful hikes and places in Switzerland. An inspiration for your next adventure.`,
+};
