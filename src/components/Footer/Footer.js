@@ -33,9 +33,7 @@ const Footer = () => {
           <FooterSocial>
             <FooterTitle>Social Media</FooterTitle>
             <UnderlineSmall />
-            <FooterItems>
-              <SocialLinks />
-            </FooterItems>
+            <SocialLinks />
           </FooterSocial>
         </FooterContactInformation>
 

@@ -21,6 +21,7 @@ export const SocialMediaDescription = styled.p`
 `;
 
 export const SocialIconWrapper = styled.div`
-  max-width: 10rem;
-  margin: 1.5rem auto;
+  display: grid;
+  place-items: center;
+  margin: 1.5rem 0;
 `;
