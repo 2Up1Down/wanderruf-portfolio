@@ -15,7 +15,11 @@ export const InfoSec = styled.section`
 `;
 
 export const InfoRow = styled.div`
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+
   flex-direction: column;
   gap: 4rem;
 
@@ -23,6 +27,7 @@ export const InfoRow = styled.div`
     flex-direction: row;
     flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
     justify-content: space-between;
+    align-items: start;
     align-items: flex-start;
     gap: 2rem;
   `}
