@@ -2,25 +2,33 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 
-const MetaDecorator = ({ title, description, author, img, url }) => {
+const MetaDecorator = ({
+  title,
+  description,
+  author,
+  img,
+  twitterUsername,
+  url,
+}) => {
   const base = process.env.REACT_APP_BASE_URL;
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: "en" }} title={`${title}`}>
       {/* /* General tags */}
-      <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="author" content={author} />
+      <meta name="image" content={img} />
       {/* /* OpenGraph tags */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={base + img} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:image" content={base + img} />
+      <meta name="og:type" content="website" />
+      <meta name="og:url" content={url} />
       {/* Twitter Card tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={base + img} />
-      <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   );
 };

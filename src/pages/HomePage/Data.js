@@ -30,4 +30,5 @@ export const MetaData = {
   description: `Discover the most beautiful hikes and places in Switzerland. An inspiration for your next adventure.`,
   author: `Wendelin Steiner`,
   img: require("../../images/wanderruf.jpeg").default,
+  twitterUsername: `wendelinsteiner`,
 };
