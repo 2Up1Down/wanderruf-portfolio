@@ -26,6 +26,8 @@ export const SocialMediaData = {
 };
 
 export const MetaData = {
-  title: "WANDERRUF | Nature and Drone Photography in Switzerland",
-  content: `Discover the most beautiful hikes and places in Switzerland. An inspiration for your next adventure.`,
+  title: `WANDERRUF | Nature and Drone Photography in Switzerland`,
+  description: `Discover the most beautiful hikes and places in Switzerland. An inspiration for your next adventure.`,
+  author: `Wendelin Steiner`,
+  img: require("../../images/wanderruf.jpeg").default,
 };
