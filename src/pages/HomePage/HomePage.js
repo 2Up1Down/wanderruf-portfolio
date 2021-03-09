@@ -8,7 +8,7 @@ import { HomeObjOne, SocialMediaData, MetaData } from "./Data";
 const Home = () => {
   return (
     <>
-      <MetaDecorator {...MetaData} />
+      <MetaDecorator {...MetaData} url={window.location.href} />
       <Hero />
       <InfoSection {...HomeObjOne} id="about" />
       <SocialMedia {...SocialMediaData} />

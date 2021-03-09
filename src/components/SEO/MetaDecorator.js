@@ -14,7 +14,7 @@ const MetaDecorator = ({ title, description, author, img, url }) => {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={img} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={url}></meta>
+      <meta property="og:url" content={url} />
       {/* Twitter Card tags */}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
@@ -26,7 +26,9 @@ const MetaDecorator = ({ title, description, author, img, url }) => {
 
 MetaDecorator.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default MetaDecorator;
