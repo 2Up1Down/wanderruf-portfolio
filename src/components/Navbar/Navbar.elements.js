@@ -27,7 +27,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: ${Theme.color.mainWhite};
+  color: ${Theme.color.mainBlack};
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
