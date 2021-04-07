@@ -68,6 +68,7 @@ export const Img = styled.img`
   border: 0;
   max-width: 100%;
   object-fit: contain;
+  max-height: -webkit-fill-available;
 
   ${media.md`
     margin: 0;
