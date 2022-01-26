@@ -8,7 +8,7 @@ import {
   FooterCopyright,
   FooterItems,
   FooterSocial,
-  FooterTitle,
+  FooterTitle, FooterCopyrightLink,
 } from "./Footer.elements";
 import Container from "./../globals/Container";
 import { SocialLinks } from "../";
@@ -38,7 +38,7 @@ const Footer = () => {
         </FooterContactInformation>
 
         <FooterCopyright>
-          wanderruf &copy; {today.getFullYear()}
+          wanderruf &copy; {today.getFullYear()} | <FooterCopyrightLink to="/data-policy">Data Policy</FooterCopyrightLink>
         </FooterCopyright>
       </Container>
     </FooterWrapper>

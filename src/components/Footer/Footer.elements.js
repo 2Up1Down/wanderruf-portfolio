@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 import Theme from "./../../styles/Theme";
 import { media } from "./../../styles/Setters";
+import {Link} from "react-router-dom";
 
 // TODO: Maybe use footer tag here
 export const FooterWrapper = styled.footer`
@@ -76,4 +77,13 @@ export const FooterCopyright = styled.div`
   font-size: 0.75rem;
   margin-top: 3rem;
   text-align: center;
+`;
+
+export const FooterCopyrightLink = styled(Link)`
+  text-decoration: none;
+  color: ${Theme.color.mainWhite};
+
+  &:hover {
+    color: ${Theme.color.secondary};
+  }
 `;
